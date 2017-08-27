@@ -1,6 +1,6 @@
 
 
-#Title: Efficient tools for quantifying and simulating transcript-level abundance in single-cell RNA-seq
+# Title: Efficient tools for quantifying and simulating transcript-level abundance in single-cell RNA-seq
 
 ## Project summary 
 
@@ -33,9 +33,9 @@
 
 ## Project Aims
 
-##Aim 1
+## Aim 1
 
-###Background
+### Background
 
 The majority of research into problems related to transcript quantification has focused on obtaining accurate and efficient _point estimates_ of transcript abundance.  That is, each transcript, in each sample, is associated with some scalar value (typically in a unit such as transcripts per million (TPM) [(Li and Dewey)](#li-rsem) or the estimated read count) that measures the transcripts' relative abundance.  While work has been done on estimating the posterior distribution in full [(Glaus et al.)](#bitseq), [(Turro et al.)](#mmseq), [(Jones et al.)](#isolator) or the posterior variance of the estimator [(Al Seesi et al.)](#isode), [(Bray et al.)](#kallisto), [(Patro et al.)](#salmon), this problem --- though more difficult --- has received less attention.  However, an understanding of the uncertainty inherent in transcript-level abundance estimates is _crucial_, especially with respect to single-cell RNA-seq data, where the uncertainty in the assignment of a sequenced fragment to a particular transcript can be very high.  Moreover, existing methodologies for estimating uncertainty have been developed primarily in the context of bulk RNA-seq, where each read-to-sample assignment is perfectly know.  Yet, numerous popular scRNA-seq technologies use barcoding techniques [(Ziegenhain et al.)](#sc-review) (e.g. Drop-Seq, inDrop, MARS-Seq etc.) where sequence barcodes are used to determine the cell from which each sequenced fragment has derived.  However, these barcodes are subject to corruption and sequencing errors, which can affect downstream estimates of abundance.  Little work has been done to assess the effect of uncertainty in cell barcode assignment on the resulting abundance estimates.
 
@@ -83,12 +83,6 @@ The majority of research into problems related to transcript quantification has 
 <a name="kallisto">Bray</a>, Nicolas L., et al. "Near-optimal probabilistic RNA-seq quantification." Nature Biotechnology 34.5 (2016): 525-529.
 <a name="salmon">Patro</a>, Rob, et al. "Salmon provides fast and bias-aware quantification of transcript expression." Nature Methods 14.4 (2017): 417-419.
 <a name="sc-review">Ziegenhain</a>, Christoph, et al. "Comparative analysis of single-cell RNA sequencing methods." Molecular cell 65.4 (2017): 631-643.
-
-
-#Aims
-We propose two specific aims:
-
-
 
 ----
 
