@@ -43,7 +43,13 @@ The focus of this proposal is to develop computationally-efficient and robust me
 
 ## Project Aims
 
-## Aim 1
+#### Aim 1 : Design, develop and test computationally-efficient approaches for robustly estimating posterior uncertainty in scRNA-seq-based transcriptional profiles.
+
+#### Aim 2 : Design, develop and test a fragment-level scRNA-seq data simulator, capable of generating synthetic data mimicking the most popular scRNA-seq protocols.
+
+### Prior contributions and preliminary Results
+
+Our group has a history of developing highly-efficient methods for transcript-level abundance estimation from bulk RNA-seq data.  This work has resulted in the development of the popular tools Sailfish [(Patro et al. 2014)](#sailfish) and Salmon [(Patro et al. 2017)](#salmon), for solving this problem.  Further, we have been systematically evaluating the space of efficiency and accuracy tradeoffs for the transcript quantification problem.  This has led to the development of a novel data-driven factorization scheme [(Zakeri et al.)](#zakeri) for improving the accuracy of fast maximum likelihood methods for transcript quantification, and a new, fast, read mapping algorithm [(Sarkar et al.)](#sarkar), that bridges the accuracy gap between fast "alignment-free" algorithms and traditional alignment-based approaches.  These developments allow for state-of-the-art transcript abundnace estimation accuracy on a very moderate computational budget.  In the proposed work, this experience will be critical for bringing some of the same insights to bare on the challenges posed by single-cell RNA-seq data.
 
 ### Background
 
@@ -107,6 +113,8 @@ We hereby commit to share our proposal, methods, code, and research papers openl
 <a name="isode">Al Seesi</a>, Sahar, et al. "Bootstrap-based differential gene expression analysis for RNA-Seq data with and without replicates." BMC genomics 15.8 (2014): S2.
 
 <a name="kallisto">Bray</a>, Nicolas L., et al. "Near-optimal probabilistic RNA-seq quantification." Nature Biotechnology 34.5 (2016): 525-529.
+
+<a name="sailfish">Patro</a>, Rob, Stephen M. Mount, and Carl Kingsford. "Sailfish enables alignment-free isoform quantification from RNA-seq reads using lightweight algorithms." Nature biotechnology 32.5 (2014): 462-464.
 
 <a name="salmon">Patro</a>, Rob, et al. "Salmon provides fast and bias-aware quantification of transcript expression." Nature Methods 14.4 (2017): 417-419.
 
