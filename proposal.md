@@ -77,17 +77,29 @@ The majority of research into problems related to transcript quantification has 
 ## References cited
 ---------
 <a name="zappia">Zappia</a>, Luke, Belinda Phipson, and Alicia Oshlack. "Splatter: Simulation Of Single-Cell RNA Sequencing Data." bioRxiv (2017): 133173.
+
 <a name="mandric">Mandric</a>, Igor, et al. "Fast bootstrapping-based estimation of confidence intervals of expression levels and differential expression from RNA-SEQ data." Bioinformatics (2017).
+
 <a name="zakeri">Zakeri</a>, Mohsen, et al. "Improved data-driven likelihood factorizations for transcript abundance estimation." Bioinformatics 33.14 (2017): i142-i151.
+
 <a name="sarkar">Sarkar</a>, H., Zakeri, M., Malik, L., & Patro, R. (2017). Towards selective-alignment: Bridging the accuracy gap between alignment-based and alignment-free transcript quantification. BioRxiv. https://doi.org/10.1101/138800
+
 <a name="alfaro">Alfaro</a>, Michael E., Stefan Zoller, and François Lutzoni. "Bayes or bootstrap? A simulation study comparing the performance of Bayesian Markov chain Monte Carlo sampling and bootstrapping in assessing phylogenetic confidence." Molecular Biology and Evolution 20.2 (2003): 255-266.
+
 <a name="li-rsem">Li</a>, Bo, and Colin N. Dewey. "RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome." BMC bioinformatics 12.1 (2011): 323.
+
 <a name="bitseq">Glaus</a>, Peter, Antti Honkela, and Magnus Rattray. "Identifying differentially expressed transcripts from RNA-seq data with biological variation." Bioinformatics 28.13 (2012): 1721-1728.
+
 <a name="mmseq">Turro</a>, Ernest, et al. "Haplotype and isoform specific expression estimation using multi-mapping RNA-seq reads." Genome biology 12.2 (2011): R13.
+
 <a name="isolator">Jones</a>, Daniel C., et al. "Isolator: accurate and stable analysis of isoform-level expression in RNA-Seq experiments." bioRxiv (2016): 088765.
+
 <a name="isode">Al Seesi</a>, Sahar, et al. "Bootstrap-based differential gene expression analysis for RNA-Seq data with and without replicates." BMC genomics 15.8 (2014): S2.
+
 <a name="kallisto">Bray</a>, Nicolas L., et al. "Near-optimal probabilistic RNA-seq quantification." Nature Biotechnology 34.5 (2016): 525-529.
+
 <a name="salmon">Patro</a>, Rob, et al. "Salmon provides fast and bias-aware quantification of transcript expression." Nature Methods 14.4 (2017): 417-419.
+
 <a name="sc-review">Ziegenhain</a>, Christoph, et al. "Comparative analysis of single-cell RNA sequencing methods." Molecular cell 65.4 (2017): 631-643.
 
 ----
