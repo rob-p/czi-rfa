@@ -29,9 +29,9 @@ The focus of this proposal is on building tools that will help to tackle the fir
 
 ## List of key personnel including name, organization, role on project
 
-* Rob --- oversee project, contribute to both quant uncertainty and simulator
-* Avi --- sc-RNA-seq quantification uncertainty 
-* Hirak --- simulator
+* Rob Patro, Stony Brook University, (PI; oversight, method development & implementation, dissemination)
+* Avi Srivastava, Stony Brook University, (Graduate Student; method development & implementation relevant to Aim 1)
+* Hirak Sarkar, Stony Brook University, (Graduate Student; method development & implementation relevant to Aim 2)
 
 # Proposal
 
