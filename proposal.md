@@ -78,6 +78,12 @@ The majority of research into problems related to transcript quantification has 
 
 ## Proposal for evaluation and dissemination of methods, resources, or results
 
+## Statement of commitment to share
+
+We hereby commit to share our proposal, methods, code, and research papers openly under permissive licenses.  Methods and tools created for this proposal will be developed openly via GitHub, and research will be disseminated via pre-prints on [bioRxiv](http://www.biorxiv.org/collection/bioinformatics) prior to submission to any conference or journal.
+
+** END OF 1,600 word proposal limit **
+
 ## References cited
 ---------
 <a name="zappia">Zappia</a>, Luke, Belinda Phipson, and Alicia Oshlack. "Splatter: Simulation Of Single-Cell RNA Sequencing Data." bioRxiv (2017): 133173.
