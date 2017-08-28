@@ -8,11 +8,13 @@ Computational Biology
 
 ## Project summary 
 
-A major component of the Human Cell Atlas (HCA) will be a repository of single-cell RNA-sequencing (scRNA-seq) data, which will allow us to transcriptionally profile a tremendous number (likely on the order of 10<sup>6</sup> — 10<sup>7</sup>) of cells. These data can offer an unprecedented  view into processes such as development and disease formation at the cellular level. The utility of these data, however, will fundamentally depend on the accuracy and capabilities of the computational tools used to process them.  Inaccurate, biased, or limited computational methods can slow or altogether prevent the uncovering of Biological knowledge encoded in the raw sequencing data.
+A major component of the Human Cell Atlas (HCA) will be a repository of single-cell RNA-sequencing (scRNA-seq) data, which will allow us to transcriptionally profile a tremendous number (likely on the order of 10^6^ — 10^7^) of cells. These data can offer an unprecedented  view into processes such as development and disease formation at the cellular level. The utility of these data, however, will fundamentally depend on the accuracy and capabilities of the computational tools used to process them.  Inaccurate, biased, or limited computational methods can slow or altogether prevent the uncovering of Biological knowledge encoded in the raw sequencing data.
 
 The focus of this proposal is on building tools that will help to tackle the first phase of processing the scRNA-seq data generated as part of the HCA initiative. Specifically, we propose to build methods to accurately assess transcript-level abundance estimates and, crucially, the fundamental uncertainty with which many of these estimates must be reported.  In order to help assess the methods we build, we propose to develop a read-level scRNA-seq simulator that will mimic many of the characteristics of different scRNA-seq experimental protocols. The abundance and uncertainty estimates we produce will be immediately useful to downstream tools (some of which are being developed in response to this same RFA; see Collaborative Network) that rely on accurate and robust transcript-level abundance profiles to perform higher-level analyses. 
 
 ## Keywords
+
+RNA-seq, scRNA-seq, transcript abundance, Bayesian inference, maximum likelihood, simulation, posterior uncertainty
 
 ## Full citations (with PubMed links), GitHub repository links, data repositories, and/or similar for up to five of your most significant contributions relevant to the proposal
 
