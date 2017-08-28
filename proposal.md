@@ -91,10 +91,7 @@ The deliverable for aim 2 is a fully functional fragment level simulator that ca
 
 We hereby commit to share our proposal, methods, code, and research papers openly under permissive licenses.  Methods and tools created for this proposal will be developed openly on GitHub, and research will be disseminated via pre-prints on [bioRxiv](http://www.biorxiv.org/collection/bioinformatics) prior to submission to any conference or journal.
 
-** END OF 1,600 word proposal limit **
-
 ## References cited
----------
 <!--
 <a name="zappia">Zappia</a>, Luke, Belinda Phipson, and Alicia Oshlack. "Splatter: Simulation Of Single-Cell RNA Sequencing Data." bioRxiv (2017): 133173.
 
