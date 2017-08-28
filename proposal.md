@@ -24,8 +24,7 @@ The focus of this proposal is on building tools that will help to tackle the fir
 
 ## Collaborative network
 
-* Casey Greene
-* Elana Fertig
+Collaborative network text here!
 
 ## List of key personnel including name, organization, role on project
 
