@@ -16,13 +16,14 @@ The focus of this proposal is on building tools that will help to tackle the fir
 
 RNA-seq, scRNA-seq, transcript abundance, Bayesian inference, maximum likelihood, simulation, posterior uncertainty
 
+
 ## Full citations (with PubMed links), GitHub repository links, data repositories, and/or similar for up to five of your most significant contributions relevant to the proposal
 
-* Patro, Rob, et al. "Salmon provides fast and bias-aware quantification of transcript expression." Nature Methods 14.4 (2017): 417-419. PMID: [28263959](https://www.ncbi.nlm.nih.gov/pubmed/28263959)
+* Patro, R., Duggal, G., Love, M. I., Irizarry, R. A., & Kingsford, C. (2017). Salmon provides fast and bias-aware quantification of transcript expression. Nature Methods, 14(4), 417–419. PMID: [28263959](https://www.ncbi.nlm.nih.gov/pubmed/28263959)
 * [Salmon transcript-level quantification software](https://github.com/COMBINE-lab/salmon)
-* Zakeri, Mohsen, et al. "Improved data-driven likelihood factorizations for transcript abundance estimation." Bioinformatics 33.14 (2017): i142-i151. DOI: [https://doi.org/10.1093/bioinformatics/btx262](https://doi.org/10.1093/bioinformatics/btx262)
-* Patro, Rob, Stephen M. Mount, and Carl Kingsford. "Sailfish enables alignment-free isoform quantification from RNA-seq reads using lightweight algorithms." Nature biotechnology 32.5 (2014): 462-464. PMID: [24752080](https://www.ncbi.nlm.nih.gov/pubmed/24752080)
-* number 5?
+* Zakeri, M., Srivastava, A., Almodaresi, F., & Patro, R. (2017). Improved data-driven likelihood factorizations for transcript abundance estimation. Bioinformatics, 33(14), i142–i151. DOI: [https://doi.org/10.1093/bioinformatics/btx262](https://doi.org/10.1093/bioinformatics/btx262)
+* Patro, R., Mount, S. M., & Kingsford, C. (2014). Sailfish enables alignment-free isoform quantification from RNA-seq reads using lightweight algorithms. Nature Biotechnology, 32(5), 462–464. PMID: [24752080](https://www.ncbi.nlm.nih.gov/pubmed/24752080)
+* Sarkar, H., Zakeri, M., Malik, L., & Patro, R. (2017). Towards selective-alignment: Bridging the accuracy gap between alignment-based and alignment-free transcript quantification. BioRxiv. DOI : [https://doi.org/10.1101/138800](https://doi.org/10.1101/138800)
 
 ## Collaborative network
 
