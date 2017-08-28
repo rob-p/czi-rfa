@@ -1,5 +1,4 @@
-
-
+<!--
 ## Title: Efficient tools for quantifying and simulating transcript-level abundance in single-cell RNA-seq
 
 ## Primary focus area
@@ -34,8 +33,7 @@ Collaborative network text here!
 * Rob Patro, Stony Brook University, (PI; oversight, method development & implementation, dissemination)
 * Avi Srivastava, Stony Brook University, (Graduate Student; method development & implementation relevant to Aim 1)
 * Hirak Sarkar, Stony Brook University, (Graduate Student; method development & implementation relevant to Aim 2)
-
-# Proposal
+-->
 
 ## Summary
 
@@ -67,7 +65,7 @@ The majority of research into problems related to transcript quantification has 
 
   C.  Though numerous approaches have been proposed for estimating either the posterior variance [@rsem;@isode;@isode2;@bitseqvb;@kallisto;@salmon] or the full posterior distribution [@mmseq;@bitseq;@salmon;@isolator] of transcript-level expression estimates, little comparison has been done concerning the effectiveness of different methodologies.  Specifically, the following (non-exhaustive) list of methods have been proposed in the literature : Bayesian MCMC [@bitseq], Slice sampling [@isolator], posterior Gibbs sampling (starting from maximum likelihood estimates) [@rsem;@mmseq;@salmon], and non-parametric bootstrapping over either input data or sufficient statistics [@isode;isode2;@kallisto;@salmon].  We propose to perform, within the framework of Salmon, a systematic comparison of different methodologies for estimating the posterior uncertainty of transcript abundances.  Specifically, we will evaluate the following methods; posterior Gibbs sampling, non-parametric bootstrapping, Bayesian bootstrapping, and Hamiltonian Monte Carlo sampling.  It has previously been demonstrated that these approaches, though related, when brought to bare on other problems, exhibit distinct results in terms of their overall accuracy [@gibbs_vs_bs].  Hence, we will evaluate each of these methodologies with respect to their overall accuracy (how often the posterior credible intervals contain the true abundances) as well as their computational cost in the transcript abundance uncertainty estimation problem.  Here, we seek a method that accurately estimates the posterior uncertainty, but which exhibits the computational efficiency to eventually scale to all scRNA-seq data that will be generated for the HCA.
 
-#### Deliverables for Aim 1
+#### Deliverables 
 
    The deliverables for this aim will consist mainly of the implementation of the described methods within the framework of our [Salmon](https://github.com/COMBINE-lab/salmon) transcript quantification tool.  These features will co-incide with proposed work (through a different funding mechanism) to enhance the single-cell modeling and inference capabilities of Salmon.  We will also collaborate with Casey Greene's lab (Collaborative Network) to expose (and publicly document) the relevant internal functionality of Salmon to speed their resampling-based approach for data augmentation.  We will also collaborate with Elana Fertig's lab (Collaborative Network) to provide our quantification estimates and posterior uncertainty information in a format that can be easily provided to their P-GAPS / CoGAPS factorization model.
    
@@ -80,7 +78,7 @@ We will develop a fragment-level simulator for scRNA-seq data --- while "reasona
 
 - C.) (I want to add this but not sure:  (This will be about DE-genes how we can model normalization step and can generate data with polyester kind of feature, lot to say here, but have to be concise.)
 
-#### Deliverables for Aim 2
+#### Deliverables 
 The deliverable for aim 2 is a fully functional fragment level simulator that can take the real scRNA-seq dataset as input and learn various model parameters. Learned model parameters will be used to generate final gene level counts [@splatter]. Depending on the protocol the set of UMIs will be generated. We will build the UMI-to-molecule graph and will incorporate user defined noise to create the final set of mapping. In the final step the simulator will generate the raw sequences after applying different bias criteria specified by user. Following majority of the bulk RNA-seq simulators, the name of the reads will contain the true origin (UMI and transcript). We intend to test various scRNA-seq quantification tools to benchmark the accuracy levels. The scRNA-seq atlas will be used as an input to the simulator to design a gold standard simulated dataset for future benchmarks. 
 
 ## Proposal for evaluation and dissemination of methods, resources, or results
