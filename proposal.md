@@ -58,7 +58,7 @@ The majority of research into problems related to transcript quantification has 
 
 ### Proposed work and deliverables
 
-We will design, implement and evaluate numerous computational strategies for assessing uncertainty in both transcript and gene-level expression inference from scRNA-seq data.  Specifically, we will expand the inference being performed to account for additional uncertainty present in scRNA-seq data (sub-aim A below), we will explore the effect of different likelihood factorizations on the accuracy of estimates of posterior uncertainty (sub-aim B below), and we will evaluate different computational approaches for estimating  the posterior uncertainty (sub-aim C below). 
+*Aim 1* : We will design, implement and evaluate numerous computational strategies for assessing uncertainty in both transcript and gene-level expression inference from scRNA-seq data.  Specifically, we will expand the inference being performed to account for additional uncertainty present in scRNA-seq data (sub-aim A below), we will explore the effect of different likelihood factorizations on the accuracy of estimates of posterior uncertainty (sub-aim B below), and we will evaluate different computational approaches for estimating  the posterior uncertainty (sub-aim C below). 
 
  - A.)  In addition to the difficult challenges posed by estimating inference uncertainty in standard bulk RNA-seq data, scRNA-seq poses additional challenges.  For example, posterior variance is expected to be *much* greater in scRNA-seq data, specifically in 3' tagged-end protocols.  This is the result of the strong 3' bias in sequencing reducing the probability of observing sequence that uniquely identifies a given transcript.  Thus, the transcript-level solutions computed from such data are expected, generally, not to be identifiable.  This makes the estimation (and downstream usage) of uncertainty information even more crucial than with other types of RNA-seq data (e.g., bulk RNA-seq or full-length scRNA-seq protocols).  Additionally, in scRNA-seq data, there is uncertainty not only in read assignment within a cell, but also in the cell from which a read has derived (due to corruption of cellular barcodes).  As a result, uncertainty is increased even further, and the methods used to estimate posterior variance (or the posterior distribution) should take this uncertainty into account.  Yet  We have been developing a novel method that is capable of providing assignment probabilities of reads to cells, leading to an enhanced notion of equivalence classes.  Given these modeling improvements, we can incorporate uncertainty in fragment -> cell assignment into our estimates of posterior variance.
 
@@ -74,13 +74,13 @@ We will design, implement and evaluate numerous computational strategies for ass
 
 #### Deliverables for Aim 1
 
-   The results
+   The deliverables for this aim will consist mainly of the implementation of the described methods within the framework of our [Salmon](https://github.com/COMBINE-lab/salmon) transcript quantification tool.  These features will co-incide with proposed work (through a different funding mechanism) to enhance the single-cell modeling and inference capabilities of Salmon.  We will also collaborate with Casey Greene's lab (Collaborative Network) to expose (and publicly document) the relevant internal functionality of Salmon to speed their resampling-based approach for data augmentation.  We will also collaborate with Elana Fertig's lab (Collaborative Network) to provide our quantification estimates and posterior uncertainty information in a format that can be easily provided to their P-GAPS / CoGAPS factorization model.
+   
+*Aim 2*: We will develop a fragment-level simulator for scRNA-seq data --- while "resonable" simulators exist for bulk RNA-seq data, very little exists in terms of simulating scRNA-seq data.  Among the simulators that do exist, the focus is mostly on simulating transcript or gene-level _counts_ [(Zappia et al.)](#zappia), rather than the reads themselves.  Moreover, simulation of scRNA-seq data poses numerous challenges that may not arise in bulk RNA-seq simulation (e.g., realistic simulation of UMI-tags, cell barcodes, etc. in addition to reads derived from transcripts according to their abundances).  We will develop a read-level scRNA-seq simulator that is capable of simulating data that mimics the most popular scRNA-seq protocols (Drop-seq, inDrop, 10X).  The existence of such a simulator will be instrumental in the development of future methods for inferring transcript (or transcript-group)-level abundance from scRNA-seq data.
 
-## Prior contributions in this area and preliminary results (optional)
+#### Deliverables for Aim 2
 
-## Proposed work and deliverables
-
-
+XXX YYY
 
 ## Proposal for evaluation and dissemination of methods, resources, or results
 
@@ -119,10 +119,3 @@ We hereby commit to share our proposal, methods, code, and research papers openl
 <a name="salmon">Patro</a>, Rob, et al. "Salmon provides fast and bias-aware quantification of transcript expression." Nature Methods 14.4 (2017): 417-419.
 
 <a name="sc-review">Ziegenhain</a>, Christoph, et al. "Comparative analysis of single-cell RNA sequencing methods." Molecular cell 65.4 (2017): 631-643.
-
-----
-
-* 2.) A read-level simulator for scRNA-seq data --- while "resonable" simulators exist for bulk RNA-seq data, very little exists in terms of simulating scRNA-seq data.  Among the simulators that do exist, the focus is mostly on simulating transcript or gene-level _counts_ [(Zappia et al.)](#zappia), rather than the reads themselves.  Moreover, simulation of scRNA-seq data poses numerous challenges that may not arise in bulk RNA-seq simulation (e.g., realistic simulation of UMI-tags, cell barcodes, etc. in addition to reads derived from transcripts according to their abundances).  We will develop a read-level scRNA-seq simulator that is capable of simulating data that mimics the most popular scRNA-seq protocols (Drop-seq, inDrop, 10X).  The existence of such a simulator will be instrumental in the development of future methods for inferring transcript (or transcript-group)-level abundance from scRNA-seq data.
-
-> We will explore numerous methodologies for estimation of the posterior distribution of transcript abundances, which sheds light on the complex dependence structure between the abundances of related transcripts.  We will explore (1) Gibbs sampling, (2) bootstrapping (non-parametric, parametric, and Bayesian), and (3) alternative sampling strategies (Hamiltonian Monte Carlo, slice sampling, etc.).  We will also explore how these methods interact with different efficient factorizations of the likelihood function [cite MMSeq, kallisto, Salmon, DDFact, IsoDE2].
-
